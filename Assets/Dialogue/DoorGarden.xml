@@ -1,0 +1,11 @@
+<dialogue>
+	<node>
+		<npctext>Надпись "Выход наверх"</npctext>
+		<answers>
+			<answer tonode = "0"> 
+				<text> Похоже надо добыть ключ. </text>  
+				<dialogend>true</dialogend>
+			</answer>
+		</answers>
+	</node>
+</dialogue>

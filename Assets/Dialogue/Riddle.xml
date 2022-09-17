@@ -1,0 +1,11 @@
+<dialogue>
+	<node>
+		<npctext>Пройди все уровни головоломки и получи корм для птиц всего за одну монету! </npctext>
+		<answers>
+			<answer tonode = "0"> 
+				<text> Пойду поищу монету. </text>  
+				<dialogend>true</dialogend>
+			</answer>
+		</answers>
+	</node>
+</dialogue>

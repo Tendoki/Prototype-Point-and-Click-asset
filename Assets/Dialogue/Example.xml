@@ -1,0 +1,91 @@
+<dialogue>
+	<node>
+		<npctext> Привет путник. </npctext>
+		<answers>
+			<answer tonode = "1" needquestvalue = "0"> 
+				<text> Привет, есть ли у тебя ключ от двери? </text>  
+				<questname>Quest1</questname>
+			</answer>
+
+			<answer tonode = "2"> 
+				<text> Если ли что на продажу? </text>  
+			</answer>
+
+			<answer tonode = "0"> 
+				<text> Я должен идти. </text>  
+				<dialogend>true</dialogend>
+			</answer>
+
+			<answer tonode = "3" needquestvalue = "1"> 
+				<text> Напомни, что нужно делать. </text>  
+				<questname>Quest1</questname>
+			</answer>
+
+			<answer tonode = "4" needquestvalue = "2"> 
+				<text> Я достал еду. </text>  
+				<questname>Quest1</questname>
+			</answer>
+		</answers>
+	</node>
+
+	<node>
+		<npctext> Да конечно. Отдам, если ты добудешь мне поесть. </npctext>
+		<answers>
+			<answer tonode = "0" questvalue = "1"> 
+				<text> Я согласен. </text>  
+				<dialogend>true</dialogend>
+				<questname>Quest1</questname>
+			</answer>
+
+			<answer tonode = "0"> 
+				<text> Мне это неинтересно. </text>  
+				<dialogend>true</dialogend>
+			</answer>
+		</answers>
+	</node>
+
+	<node>
+		<npctext> Я не торговец. </npctext>
+		<answers>
+			<answer tonode = "1" needquestvalue = "0"> 
+				<text> Может тогда у тебя есть ключ от двери? </text>  
+				<questname>Quest1</questname>
+			</answer>
+
+			<answer tonode = "0"> 
+				<text> Тогда я пойду. </text>  
+				<dialogend>true</dialogend>
+			</answer>
+		</answers>
+	</node>
+
+	<node>
+		<npctext> Найди мне поесть. </npctext>
+		<answers>
+			<answer tonode = "0"> 
+				<text> Хорошо, попробую. </text> 
+				<dialogend>true</dialogend>
+			</answer>
+		</answers>
+	</node>
+
+	<node>
+		<npctext> О как вкусно, спасибо тебе большое путник! </npctext>
+		<answers>
+			<answer tonode = "5" needquestvalue = "2" questvalue = "3"> 
+				<text> Что насчет ключа? </text> 
+				<questname>Quest1</questname>
+			</answer>
+		</answers>
+	</node>
+
+	<node>
+		<npctext> Держи ключ. Приятно с вами работать. </npctext>
+		<answers>
+			<answer tonode = "0"> 
+				<text> Благодарю </text> 
+				<dialogend>true</dialogend>
+			</answer>
+		</answers>
+	</node>
+</dialogue>
